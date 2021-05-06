@@ -1,16 +1,23 @@
-.App {
-  text-align: center;
-}
+.Container > div {
+border: 1px solid #ccc;
+padding: 10px; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.Column1, .Column2, .Column3 {
+flex: 1; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Column1 {
+background-color: #ccc; }
+
+.Column2 {
+background-color: #ddd; }
+
+.Column3 {
+background-color: #eee; }
+
+@media (max-width: 768px){
+.Container{
+flex-direction: column;
+ }
 }
 
 .App-header {
